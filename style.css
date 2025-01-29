@@ -1,0 +1,68 @@
+#logo {
+  font-size: xx-large;
+}
+#red {
+  color: red;
+}
+
+#nav a {
+  border: 1px solid black;
+}
+
+#categories {
+  margin: 40px;
+}
+.box {
+  width: 100%;
+  aspect-ratio: 3/2;
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 5%;
+  margin-bottom: 20px;
+  text-align: right;
+  padding: 5px;
+  font-size: 2cqw;
+  font-weight: 600;
+}
+
+.box:hover {
+  translate: 1px 1px;
+  box-shadow: 1px 1px 5px #aaa;
+  font-size: 3cqw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.box-1 {
+  background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1526.webp);
+  background-size: 75%;
+  background-position: 40% 40%;
+}
+.box-2 {
+  background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1164.webp);
+  background-size: 93%;
+  background-position: 50% 35%;
+}
+.box-3 {
+  background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1542.webp);
+  background-size: 93%;
+  background-position: 60% 35%;
+}
+.box-4 {
+  background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1656.webp);
+  background-size: 80%;
+}
+.box-5 {
+  background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1596.webp);
+  background-size: 70%;
+  background-position: 40% 40%;
+}
+.box-6 {
+  background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1590.webp);
+  background-size: 88%;
+  background-position: 50% 25%;
+}
