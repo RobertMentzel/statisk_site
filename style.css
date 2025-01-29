@@ -66,3 +66,35 @@ a {
   background-size: 88%;
   background-position: 50% 25%;
 }
+
+.produkt_billede {
+  aspect-ratio: 3/4;
+  width: 250px;
+  height: auto;
+  /* border: 1px solid black; */
+
+  background-size: contain;
+}
+
+.produkt a {
+  text-decoration: underline;
+}
+
+.produkt_billede-1 {
+  background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1164.webp);
+  text-align: right;
+  color: red;
+}
+
+.produkt_billede-2 {
+  background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1526.webp);
+}
+
+.produkt_billede-3 {
+  background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1542.webp);
+}
+
+.produkt_billede-4 {
+  background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1656.webp);
+  opacity: 50%;
+}
