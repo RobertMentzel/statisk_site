@@ -1,16 +1,100 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  background-color: seagreen;
+  padding: 1px;
+  box-shadow: 1px 1px 5px #555555;
+}
+
+body {
+  background-color: white;
+}
+
+#logo {
+  font-family: "Nunito", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Nunito Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+h1 {
+  margin: 40px 0 20px 10px;
+}
+
+h2 {
+  margin: 40px 0 0 10px;
+}
+
+h3 {
+  margin: 10px 0 0 10px;
+}
+
+main p {
+  margin: 10px 0 20px 10px;
+}
+
+button {
+  margin: 20px 0 0 10px;
+}
+
+label {
+  margin: 0 0 0 10px;
+}
+
+p,
+a,
+button,
+label,
+select {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 #logo {
   font-size: xx-large;
+  padding: 10px 0 10px 10px;
 }
 #red {
-  color: red;
+  color: seagreen;
+  text-shadow: 1px 1px 1px black;
 }
 
 #nav a {
   border: 1px solid black;
+  margin-right: 5px;
+  border-radius: 5%;
+  font-size: 3cqw;
+}
+
+#nav a:hover {
+  color: red;
+  border-color: red;
 }
 
 #categories {
-  margin: 40px;
+  margin-bottom: 40px;
 }
 .box {
   width: 100%;
@@ -22,14 +106,15 @@
   margin-bottom: 20px;
   text-align: right;
   padding: 5px;
-  font-size: 2cqw;
+  font-size: 3cqw;
   font-weight: 600;
 }
 
 .box:hover {
   translate: 1px 1px;
-  box-shadow: 1px 1px 5px #aaa;
-  font-size: 3cqw;
+  box-shadow: 1px 1px 5px seagreen;
+  font-size: 5cqw;
+  border: 2px solid seagreen;
 }
 
 a {
@@ -69,13 +154,18 @@ a {
 
 .produkt_billede {
   aspect-ratio: 3/4;
-  width: 250px;
+  width: 100%;
   height: auto;
   /* border: 1px solid black; */
 
   background-size: contain;
 }
-
+.produkt {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 2px 2px 5px black;
+  margin-bottom: 10px;
+}
 .produkt a {
   text-decoration: underline;
 }
@@ -97,4 +187,52 @@ a {
 .produkt_billede-4 {
   background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1656.webp);
   opacity: 50%;
+}
+
+.t-shirt {
+  margin-top: 40px;
+  background-color: white;
+}
+
+.large_text {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.add_to_basket {
+  background-color: rgba(46, 139, 86, 0.692);
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+label,
+select,
+button {
+  font-size: 5cqw;
+}
+
+button {
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  #logo {
+    font-size: 5cqw;
+  }
+
+  .box {
+    font-size: 2cqw;
+  }
+  .box:hover {
+    font-size: 4cqw;
+  }
+
+  label,
+  select,
+  button {
+    font-size: 2cqw;
+  }
+  #nav a {
+    font-size: 2cqw;
+  }
 }
