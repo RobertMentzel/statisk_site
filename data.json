@@ -1,0 +1,13 @@
+{
+  "navne": {
+    "fornavn": "Sebastian",
+    "efternavn": "Mentzel"
+  },
+  "alder": 19,
+  "interesser": ["Tegning", "Konceptudvikling", "Webudvikling", "Digitalt Design"],
+
+  "kontakt": {
+    "type": "email",
+    "adresse": "seme0001@stud.kea.dk"
+  }
+}
