@@ -122,7 +122,7 @@ a {
   color: black;
 }
 
-.box-1 {
+/* .box-1 {
   background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1526.webp);
   background-size: 75%;
   background-position: 40% 40%;
@@ -150,7 +150,7 @@ a {
   background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1590.webp);
   background-size: 88%;
   background-position: 50% 25%;
-}
+} */
 
 .produkt_billede {
   aspect-ratio: 3/4;
@@ -161,6 +161,7 @@ a {
   background-size: contain;
 }
 .produkt {
+  display: grid;
   background-color: white;
   padding: 10px;
   box-shadow: 2px 2px 5px black;
@@ -168,6 +169,26 @@ a {
 }
 .produkt a {
   text-decoration: underline;
+  display: grid;
+}
+
+.onSale {
+  grid-column: 1;
+  grid-row: 1;
+  place-self: start start;
+  visibility: hidden;
+}
+
+.soldOut {
+  grid-column: 1;
+  grid-row: 1;
+  place-self: start end;
+  visibility: hidden;
+}
+
+.produkt img {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .produkt_billede-1 {
