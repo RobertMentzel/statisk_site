@@ -18,9 +18,11 @@ header {
 }
 
 body {
-  background-color: white;
+  background: linear-gradient(-45deg, seagreen, white);
+  min-height: 100vh;
+  animation: gradient 15s ease infinite;
+  background-size: 100% 100%;
 }
-
 #logo {
   font-family: "Nunito", serif;
   font-weight: 600;
@@ -49,7 +51,8 @@ h3 {
   margin: 10px 0 0 10px;
 }
 
-main p {
+main p,
+span {
   margin: 10px 0 20px 10px;
 }
 
@@ -65,7 +68,9 @@ p,
 a,
 button,
 label,
-select {
+select,
+option,
+span {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -108,11 +113,12 @@ select {
   padding: 5px;
   font-size: 3cqw;
   font-weight: 600;
+  box-shadow: 1px 1px 5px black;
 }
 
 .box:hover {
   translate: 1px 1px;
-  box-shadow: 1px 1px 5px seagreen;
+  box-shadow: 10px 10px 50px seagreen;
   font-size: 5cqw;
   border: 2px solid seagreen;
 }
@@ -168,27 +174,47 @@ a {
   margin-bottom: 10px;
 }
 .produkt a {
-  text-decoration: underline;
   display: grid;
 }
 
 .onSale {
+  visibility: hidden;
+  color: white;
+  background-color: red;
+  padding: 10px;
+  text-decoration: none;
   grid-column: 1;
   grid-row: 1;
   place-self: start start;
+  z-index: 2;
+}
+
+.newPrice {
   visibility: hidden;
+  color: white;
+  background-color: red;
+  padding: 10px;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+}
+
+.visible {
+  visibility: visible;
 }
 
 .soldOut {
-  grid-column: 1;
-  grid-row: 1;
-  place-self: start end;
-  visibility: hidden;
+  padding: 10px;
+  /* visibility: hidden; */
+  background-color: #555555;
+  opacity: 50%;
+  color: white;
 }
 
 .produkt img {
   grid-column: 1;
   grid-row: 1;
+  z-index: 1;
 }
 
 .produkt_billede-1 {
@@ -210,11 +236,16 @@ a {
   opacity: 50%;
 }
 
-.t-shirt {
+.single_produkt {
+  display: grid;
   margin-top: 40px;
   background-color: white;
 }
 
+.single_produkt img {
+  grid-row: 1;
+  grid-column: 1;
+}
 .large_text {
   font-size: 50px;
   margin-top: 0;
@@ -223,7 +254,7 @@ a {
 .add_to_basket {
   background-color: rgba(46, 139, 86, 0.692);
   padding: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 
 label,

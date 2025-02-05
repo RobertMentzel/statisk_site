@@ -7,8 +7,10 @@ function showCategories(data) {
   const markUp = data
     .map(
       (element) => `<a href="produktliste.html?category=${element.category}"
-          ><div class="box"> ${element.category}</div
-        ></a>`
+          ><div class="box"> ${element.category} </div
+        ></a>
+  
+        `
     )
     .join(``);
   kategori.innerHTML = markUp;

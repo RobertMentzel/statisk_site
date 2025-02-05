@@ -47,9 +47,11 @@ const productContainer = document.querySelector(".productContainer");
 let url = `https://kea-alt-del.dk/t7/api/products/${productId}`;
 
 function showProduct(data) {
-  const markup = ` <div class="t-shirt">
+  const markup = ` <div class="single_produkt ${data.soldout && "soldOut"}">
         <img src="https://kea-alt-del.dk/t7/images/webp/640/${productId}.webp" alt="produktbillede" />
+        <span class="onSale ${data.discount && "visible"}">${data.discount}%</span>
         <div>
+        
           <h1>Product Information</h1>
           <h3>Model Name</h3>
           <p>${data.productdisplayname}</p>
@@ -60,7 +62,12 @@ function showProduct(data) {
 
           <h2>${data.brandname}</h2>
           <p>${data.brandbio}</p>
+<p>${data.price} kr.</p>
+          <span class="newPrice ${data.discount && "visible"}"> Now: ${Math.floor(
+    data.price - data.price * (data.discount / 100)
+  )} kr.</span>
         </div>
+        
         <div class="add_to_basket">
           <p class="large_text">
           ${data.productdisplayname}
