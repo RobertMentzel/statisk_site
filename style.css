@@ -56,7 +56,7 @@ span {
   margin: 10px 0 20px 10px;
 }
 
-button {
+main button {
   margin: 20px 0 0 10px;
 }
 
@@ -96,6 +96,15 @@ span {
 #nav a:hover {
   color: red;
   border-color: red;
+}
+.filter button {
+  border-style: none;
+  border-radius: 5px;
+  width: 40%;
+}
+
+.filter button:focus {
+  background-color: #555555;
 }
 
 #categories {
@@ -286,5 +295,8 @@ button {
   }
   #nav a {
     font-size: 2cqw;
+  }
+  .filter button {
+    width: 20%;
   }
 }
