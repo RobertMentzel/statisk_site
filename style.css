@@ -91,6 +91,7 @@ span {
   margin-right: 5px;
   border-radius: 5%;
   font-size: 3cqw;
+  padding: 5px;
 }
 
 #nav a:hover {
